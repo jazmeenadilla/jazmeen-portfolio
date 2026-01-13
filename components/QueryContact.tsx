@@ -73,7 +73,7 @@ const QueryContact = () => {
 
                         <div className="space-y-4">
                             {/* Email */}
-                            <a href="mailto:emailmu@gmail.com" target='blank' className="flex items-center gap-4 p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-teal-500 transition-all group">
+                            <a href="mailto:jazmeenadilla01@gmail.com" target='blank' className="flex items-center gap-4 p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-teal-500 transition-all group">
                                 <div className="p-3 bg-teal-500/10 rounded-lg text-teal-400 group-hover:bg-teal-500 group-hover:text-white transition-colors">
                                     <FiMail size={24} />
                                 </div>
@@ -84,7 +84,7 @@ const QueryContact = () => {
                             </a>
 
                             {/* LinkedIn */}
-                            <a href="#" target='blank' className="flex items-center gap-4 p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-blue-500 transition-all group">
+                            <a href="https://www.linkedin.com/in/jazmeen-adilla-8b8a462a4" target='blank' className="flex items-center gap-4 p-4 bg-slate-900 border border-slate-800 rounded-xl hover:border-blue-500 transition-all group">
                                 <div className="p-3 bg-blue-500/10 rounded-lg text-blue-400 group-hover:bg-blue-500 group-hover:text-white transition-colors">
                                     <FiLinkedin size={24} />
                                 </div>
