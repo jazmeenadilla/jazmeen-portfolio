@@ -65,10 +65,9 @@ const QueryContact = () => {
                             Let's <span className="text-teal-400">Connect</span>
                         </h2>
                         <p className="text-slate-400 text-lg mb-8 leading-relaxed">
-                            Sedang mencari Data Analyst yang bisa menerjemahkan angka menjadi strategi?
-                            Atau ingin berdiskusi tentang proyek visualisasi data?
+                            Looking for a Data Analyst who can translate numbers into strategy? Or want to discuss a data visualization project?
                             <br /><br />
-                            Jalankan *query* di samping atau hubungi saya melalui *data sources* di bawah ini.
+                            Run the query below or contact me through the data sources next to me.
                         </p>
 
                         <div className="space-y-4">
@@ -78,8 +77,8 @@ const QueryContact = () => {
                                     <FiMail size={24} />
                                 </div>
                                 <div>
-                                    <div className="text-xs text-slate-500 font-mono">PRIMARY KEY (Email)</div>
-                                    <div className="text-white font-medium">Hubungi via Email</div>
+                                    <div className="text-xs text-slate-500 font-mono">EMAIL</div>
+                                    <div className="text-white font-medium">Get in touch via Email</div>
                                 </div>
                             </a>
 

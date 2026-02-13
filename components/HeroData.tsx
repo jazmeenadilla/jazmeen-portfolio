@@ -67,8 +67,8 @@ const HeroData = () => {
                         transition={{ delay: 0.5 }}
                         className="text-slate-400 max-w-lg text-lg leading-relaxed"
                     >
-                        Mengubah data mentah menjadi cerita yang bermakna.
-                        Spesialisasi dalam <span className="text-teal-400 font-semibold">SQL, Python,</span> dan <span className="text-blue-400 font-semibold">Data Visualization</span> untuk membantu bisnis mengambil keputusan yang tepat.
+                        Transforming raw data into meaningful stories.
+                        Specializing in <span className="text-teal-400 font-semibold">SQL, Python,</span> and <span className="text-blue-400 font-semibold">Data Visualization</span> to help businesses make informed decisions.
                     </motion.p>
 
                     <motion.div

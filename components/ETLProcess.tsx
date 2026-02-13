@@ -50,8 +50,7 @@ const ETLProcess = () => {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">The <span className="text-teal-400">Process</span></h2>
                     <p className="text-slate-400 max-w-2xl mx-auto">
-                        Dari data mentah yang berantakan menjadi *insight* yang jernih.
-                        Ini adalah alur kerja (Pipeline) yang saya bangun untuk memastikan kualitas data.
+                        From messy raw data to clear insights. This is the pipeline I built to ensure data quality.
                     </p>
                 </div>
 
@@ -144,8 +143,8 @@ const ETLProcess = () => {
                                 onClick={runPipeline}
                                 disabled={isProcessing}
                                 className={`flex items-center gap-2 px-8 py-3 rounded-full font-bold transition-all ${isProcessing
-                                        ? 'bg-slate-700 text-slate-500 cursor-not-allowed'
-                                        : 'bg-teal-500 hover:bg-teal-400 text-slate-900 shadow-[0_0_20px_rgba(20,184,166,0.4)]'
+                                    ? 'bg-slate-700 text-slate-500 cursor-not-allowed'
+                                    : 'bg-teal-500 hover:bg-teal-400 text-slate-900 shadow-[0_0_20px_rgba(20,184,166,0.4)]'
                                     }`}
                             >
                                 {isProcessing ? 'Processing Data...' : <><FiPlay /> Run ETL Pipeline</>}
@@ -169,9 +168,9 @@ const ETLProcess = () => {
                                     initial={{ opacity: 0, x: -10 }}
                                     animate={{ opacity: 1, x: 0 }}
                                     className={`${log.includes("SUCCESS") ? "text-green-400" :
-                                            log.includes("EXTRACT") ? "text-blue-300" :
-                                                log.includes("TRANSFORM") ? "text-yellow-300" :
-                                                    "text-slate-300"
+                                        log.includes("EXTRACT") ? "text-blue-300" :
+                                            log.includes("TRANSFORM") ? "text-yellow-300" :
+                                                "text-slate-300"
                                         }`}
                                 >
                                     {log}

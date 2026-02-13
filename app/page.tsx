@@ -5,6 +5,9 @@ import CaseStudies from "@/components/CaseStudies";
 import ETLProcess from "@/components/ETLProcess";
 import QueryContact from "@/components/QueryContact";
 import Footer from "@/components/Footer";
+import About from "@/components/About";
+import Education from "@/components/Education";
+import Certification from "@/components/Certification";
 
 export default function Home() {
   return (
@@ -12,11 +15,20 @@ export default function Home() {
       <section id="about">
         <HeroData />
       </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="education">
+        <Education />
+      </section>
       <section id="skills">
         <AnalystToolkit />
       </section>
       <section id="projects">
         <CaseStudies />
+      </section>
+      <section id="certification">
+        <Certification />
       </section>
       <section id="process">
         <ETLProcess />

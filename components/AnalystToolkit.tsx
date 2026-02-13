@@ -33,7 +33,7 @@ const AnalystToolkit = () => {
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">The Analyst <span className="text-teal-400">Toolkit</span></h2>
                     <p className="text-slate-400 max-w-2xl mx-auto">
-                        Kumpulan alat dan teknologi yang saya gunakan untuk mengekstrak, mengolah, dan memvisualisasikan data.
+                        A collection of tools and technologies I use to extract, process, and visualize data.
                     </p>
                 </div>
 
