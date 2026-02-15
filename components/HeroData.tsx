@@ -6,6 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { FiDownload, FiDatabase, FiCheckCircle } from 'react-icons/fi';
 import Image from 'next/image';
+import { FiFileText } from "react-icons/fi";
 
 const HeroData = () => {
     const bars = [20, 45, 30, 80, 50, 95, 65, 85, 45, 100, 75, 50];
@@ -80,9 +81,15 @@ const HeroData = () => {
                         <a href="#projects" className="px-8 py-3 bg-gradient-to-r from-teal-500 to-blue-600 text-white font-bold rounded-lg hover:shadow-[0_0_20px_rgba(20,184,166,0.5)] transition-all transform hover:-translate-y-1">
                             Lihat Dashboard
                         </a>
-                        <button className="px-8 py-3 border border-slate-600 hover:border-teal-400 text-slate-300 hover:text-teal-400 font-mono rounded-lg hover:bg-teal-400/10 flex items-center gap-2 transition-all">
-                            <FiDownload /> Resume
-                        </button>
+                        <a
+                            href="/JAZMEEN ADILLA_ ATS CV.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            download="JAZMEEN ADILLA_ ATS CV.pdf"
+                            className="px-8 py-3 border border-slate-600 hover:border-teal-400 text-slate-300 hover:text-teal-400 font-mono rounded-lg hover:bg-teal-400/10 flex items-center gap-2 transition-all"
+                        >
+                            <FiFileText /> Unduh CV
+                        </a>
                     </motion.div>
                 </div>
 
