@@ -13,7 +13,7 @@ const certifications = [
         issuer: "RevoU Tech Academy",
         date: "Feb 2025",
         // GANTI NAMA FILE DI BAWAH INI SESUAI FILE DI FOLDER public/certificates/
-        image: "/certificates/revou-cert.jpg",
+        image: "/img/fsda.jpg",
         desc: "An intensive 6-month program covering Python, SQL, Tableau, and Business Acumen with a Distinction passing grade.",
         skills: ["Python", "SQL", "Tableau", "Business Strategy"],
         link: "#" // Masukkan link kredensial jika ada
@@ -21,13 +21,31 @@ const certifications = [
     {
         id: 2,
         title: "SQL for Data Science",
-        issuer: "Coursera / HackerRank", // Contoh saja
+        issuer: "RevoU Tech Academy", // Contoh saja
         date: "Jan 2025",
         // GANTI NAMA FILE DI SINI
         image: "/img/DAMC.jpg",
         desc: "Certification of competency in performing complex queries, joins, subqueries, and relational database management.",
         skills: ["Advanced Query", "Database Design"],
         link: "#"
+    },
+    {
+        id: 3,
+        title: "Stand-Out Data Analyst Portfolio for US Recruiters",
+        issuer: "BuildWithAngga", // Ganti sesuai nama bootcamp
+        date: "Feb 2026",
+        image: "/img/bwa porto.jpg", // Ganti nama file sesuai kebutuhan
+        desc: "Learn to build a professional and relevant Data Analyst portfolio that meets US company standards, complete with realistic projects based on datasets similar to real companies.",
+        skills: [
+            "Data Cleaning",
+            "Exploratory Data Analysis",
+            "Excel",
+            "Power BI",
+            "Dashboard Development",
+            "Data Storytelling",
+            "Portfolio Strategy"
+        ],
+        link: "https://drive.google.com/file/d/1JXD_IDHgI8ft43aULaJ4VIaIvMcL8ugS/view?usp=sharing"
     }
 ];
 
