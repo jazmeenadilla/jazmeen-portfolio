@@ -20,7 +20,7 @@ const Education = () => {
         },
         {
             id: 2,
-            school: "RevoU Tech Academy",
+            school: "RevoU",
             degree: "Full Stack Data Analytics",
             year: "2025 - 2026", // Sesuaikan tahun bootcamp
             location: "Intensive Bootcamp",

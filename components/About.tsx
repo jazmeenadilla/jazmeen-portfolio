@@ -32,9 +32,6 @@ const About = () => {
                     <h2 className="text-3xl md:text-5xl font-bold mb-2 text-white">
                         About <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Me</span>
                     </h2>
-                    <p className="text-slate-400 mt-4 max-w-xl text-lg leading-relaxed">
-                        Evidence of my technical competence and dedication to continuous learning in the field of Data Analytics.
-                    </p>
                 </motion.div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-start">
@@ -47,22 +44,22 @@ const About = () => {
                         viewport={{ once: true }}
                         className="lg:col-span-7 space-y-7 text-lg text-slate-400"
                     >
-                        <p className="leading-relaxed">
+                        <p className="leading-relaxed text-justify">
                             I am a <strong className="text-slate-200 font-semibold">Mathematics graduate</strong> transitioning into data analytics, grounded in <span className="text-teal-400 font-medium">honesty, discipline, and perseverance</span> to deliver reliable, evidence-based insights.
                         </p>
 
-                        <p className="leading-relaxed">
-                            To further strengthen this foundation, I pursued the <strong className="text-slate-200 font-semibold">RevoU Full-Stack Data Analytics program</strong>, where I developed strong technical skills in <span className="text-teal-400 font-medium whitespace-nowrap">Statistics, Spreadsheets, SQL, Python, Tableau, and Power BI</span> with hands-on experience in data preparation, analysis, and visualization. Through this program, I successfully translated complex data into actionable business recommendations, enhancing decision-making processes and overall efficiency.
+                        <p className="leading-relaxed text-justify">
+                            To further strengthen this foundation, I pursued the <strong className="text-slate-200 font-semibold">RevoU Full-Stack Data Analytics program</strong>, where I developed strong technical skills in <span className="text-teal-400 font-medium">Statistics, Spreadsheets, SQL, Python, Tableau, and Power BI</span> with hands-on experience in data preparation, analysis, and visualization. Through this program, I successfully translated complex data into actionable business recommendations, enhancing decision-making processes and overall efficiency.
                         </p>
 
                         <div className="relative p-6 my-8 bg-gradient-to-r from-teal-500/10 to-transparent border-l-2 border-teal-500 rounded-r-2xl">
                             <FiActivity className="absolute top-6 right-6 text-teal-500/10 text-6xl" />
-                            <p className="italic text-slate-300 text-base md:text-lg relative z-10 font-light">
+                            <p className="italic text-slate-300 text-base md:text-lg relative z-10 font-light text-justify">
                                 "Beyond analysis, I am driven to connect data insights to broader business strategy, identifying new opportunities and contributing to operational effectiveness."
                             </p>
                         </div>
 
-                        <p className="leading-relaxed">
+                        <p className="leading-relaxed text-justify">
                             I am eager to bring this <strong className="text-slate-200 font-semibold">disciplined, data-driven approach</strong> to a team that drives measurable business growth and supports impactful decision-making.
                         </p>
                     </motion.div>

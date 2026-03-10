@@ -66,7 +66,7 @@ const Certification = () => {
                     className="mb-10 text-center md:text-left border-b border-slate-800/50 pb-5"
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-2 text-white">
-                        Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Certifications</span>
+                        Professional <span className="text-transparent bg-clip-text bg-linear-to-r from-teal-400 to-emerald-400">Certifications</span>
                     </h2>
                     <p className="text-white mt-4 max-w-xl leading-relaxed mx-auto md:mx-0">
                         Evidence of my technical competence and dedication to continuous learning in the field of Data Analytics.
