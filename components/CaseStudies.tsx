@@ -37,7 +37,7 @@ const projects = [
       results: "Analysis revealed 80% of revenue comes from four 'Vital Few' items. June and November saw sharp declines (34% and 15%). Recommended dynamic bundling of high-margin items with beverages, digital payment incentives to accelerate checkout by 20%, and retraining male staff to close the night-shift upselling gap toward 305.16 INR AOV.",
 
       links: {
-        deck: "#",
+        deck: "https://docs.google.com/presentation/d/1KD0A5GVD25kfkn5Zlqq-fpR7W_U9JMG8xUtpJTILye0/edit?usp=sharing",
         query: "#",
         colab: "https://colab.research.google.com/drive/15ppBVU-x68MLzY2lahQUhvfP9i8HXOU_?usp=sharing",
         tableau: "https://public.tableau.com/views/DEEPPJAZMEENADILLA-BalajiFastFoodSalesDashboard1/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
@@ -70,7 +70,7 @@ const projects = [
       methods: "Extracting data using Google BigQuery (SQL) with aggregation functions, Window Functions, and CTEs. Applying the OBIPR (Observation, Business Impact, Isolation, Prioritization, Recommendation) analytical framework to generate structured business insights.",
       results: "Found that Confections, Meat, and Poultry categories collectively contribute 34.4% of total revenue with customer retention rates exceeding 99%. Conversely, the Grain category is a negative outlier with the lowest repeat purchase rate (93.7%) due to high average pricing. Recommended implementation of 'Daily Rewards' to increase daily shopping frequency and value-based pricing adjustments for the Grain category.",
       links: {
-        deck: "#",
+        deck: "https://docs.google.com/presentation/d/1oxEa65lf6Vi7NaJuj8ikjOT3jxdFiRbyCwhaXryklYM/edit?usp=sharing",
         query: "https://console.cloud.google.com/bigquery?ws=!1m7!1m6!12m5!1m3!1sintermediete-assignment!2sus-central1!3s9d06ebd9-b0ad-45ba-92e4-5cb25bc4ef7d!2e1&project=my-login-project-481408",
         colab: "#",
         tableau: "#",
@@ -101,7 +101,7 @@ const projects = [
       methods: "Data Cleaning (removing duplicates, handling missing values, data imputation, removing outliers). Descriptive Analysis and ROI comparison. Conducting Statistical Hypothesis Testing using T-Test (Two-Sample Assuming Equal & Unequal Variances) with an alpha significance level of 0.05.",
       results: "The campaign evaluation found that the 12/12 Campaign was the most efficient (generating 59x the turnover per Rp1 discount) because it successfully triggered wholesale shopping without excessive discounts. The A/B Testing results (p-value = 0) rejected the Null Hypothesis, statistically proving that the new design ('Buy Now') significantly increased the Average Transaction Value (ATV) by Rp84,357 per user.",
       links: {
-        deck: "#",
+        deck: "https://docs.google.com/presentation/d/1h4HreHarh6M0xH4R1pe_MKqHua4Q_UNpbGSqKKJFWeE/edit?usp=sharing",
         query: "#",
         colab: "#",
         tableau: "#",

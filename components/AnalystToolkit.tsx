@@ -63,6 +63,27 @@ const AnalystToolkit = () => {
                     ))}
                 </div>
 
+                {/* Soft Skills Section */}
+                <div className="mt-20 pt-16 border-t border-slate-800/80 text-center">
+                    <h3 className="text-3xl font-bold text-white mb-8">
+                        Soft <span className="text-teal-400">Skills</span>
+                    </h3>
+                    <div className="flex flex-wrap justify-center gap-4">
+                        {["Problem Solving", "Analytical Thinking", "Adaptability", "Data Communication", "Teamwork"].map((skill, index) => (
+                            <motion.div
+                                key={`soft-${index}`}
+                                initial={{ opacity: 0, scale: 0.9 }}
+                                whileInView={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.3, delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                                className="px-6 py-2.5 bg-slate-800/60 border border-slate-700/80 hover:border-teal-500/50 hover:bg-slate-800 hover:text-teal-300 text-slate-300 rounded-full text-sm font-medium transition-all shadow-sm cursor-default"
+                            >
+                                {skill}
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+
             </div>
         </section>
     );

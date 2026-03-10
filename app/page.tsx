@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import About from "@/components/About";
 import Education from "@/components/Education";
 import Certification from "@/components/Certification";
+import Recommendation from "@/components/Recommendation";
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
       </section>
       <section id="certification">
         <Certification />
+      </section>
+      <section id="recommendation">
+        <Recommendation />
       </section>
       <section id="process">
         <ETLProcess />

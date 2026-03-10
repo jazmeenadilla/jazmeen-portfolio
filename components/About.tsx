@@ -27,7 +27,7 @@ const About = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
-                    className="mb-16 md:mb-20"
+                    className="mb-12 md:mb-18"
                 >
                     <h2 className="text-3xl md:text-5xl font-bold mb-2 text-white">
                         About <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-400">Me</span>

@@ -42,8 +42,6 @@ const certifications = [
             "Excel",
             "Power BI",
             "Dashboard Development",
-            "Data Storytelling",
-            "Portfolio Strategy"
         ],
         link: "https://drive.google.com/file/d/1JXD_IDHgI8ft43aULaJ4VIaIvMcL8ugS/view?usp=sharing"
     }
@@ -54,9 +52,9 @@ const Certification = () => {
         <section id="certifications" className="py-20 bg-slate-950 text-slate-300 relative overflow-hidden">
 
             {/* Soft Background Glow */}
-            <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-teal-900/10 rounded-full blur-[100px] pointer-events-none -translate-y-1/2"></div>
+            <div className="bg-slate-950 text-white relative"></div>
 
-            <div className="max-w-4xl mx-auto px-6 relative z-10">
+            <div className="max-w-7xl mx-auto px-6">
 
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -68,7 +66,7 @@ const Certification = () => {
                     <h2 className="text-3xl md:text-5xl font-bold mb-2 text-white">
                         Professional <span className="text-transparent bg-clip-text bg-linear-to-r from-teal-400 to-emerald-400">Certifications</span>
                     </h2>
-                    <p className="text-white mt-4 max-w-xl leading-relaxed mx-auto md:mx-0">
+                    <p className="mt-4 max-w-xl leading-relaxed mx-auto md:mx-0 text-slate-400">
                         Evidence of my technical competence and dedication to continuous learning in the field of Data Analytics.
                     </p>
                 </motion.div>
