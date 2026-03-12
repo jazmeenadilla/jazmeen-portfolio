@@ -40,16 +40,16 @@ const ETLProcess = () => {
     };
 
     return (
-        <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <section className="py-20 bg-white dark:bg-slate-900 text-black dark:text-white relative overflow-hidden transition-colors duration-300">
             {/* Background Line Decoration */}
-            <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent"></div>
+            <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-neutral-300 dark:via-slate-700 to-transparent"></div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
 
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">The <span className="text-teal-400">Process</span></h2>
-                    <p className="text-slate-400 max-w-2xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-white">The <span className="text-black dark:text-teal-400">Process</span></h2>
+                    <p className="text-neutral-600 dark:text-slate-400 max-w-2xl mx-auto">
                         From messy raw data to clear insights. This is the pipeline I built to ensure data quality.
                     </p>
                 </div>
@@ -57,17 +57,17 @@ const ETLProcess = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
 
                     {/* 1. VISUALISASI PIPELINE (Diagram Kiri) */}
-                    <div className="lg:col-span-2 bg-slate-800/50 border border-slate-700 rounded-xl p-8 relative min-h-[400px] flex flex-col justify-center">
+                    <div className="lg:col-span-2 bg-white dark:bg-slate-800/50 border border-neutral-200 dark:border-slate-700 rounded-xl p-8 relative min-h-[400px] flex flex-col justify-center shadow-md dark:shadow-none">
 
                         {/* Diagram Alur */}
                         <div className="flex justify-between items-center relative">
 
                             {/* NODE 1: RAW DATA */}
                             <div className="flex flex-col items-center gap-2 z-10">
-                                <div className="w-16 h-16 bg-slate-700 rounded-xl flex items-center justify-center border border-slate-600 shadow-lg">
-                                    <RiFileExcel2Fill className="text-3xl text-green-500" />
+                                <div className="w-16 h-16 bg-neutral-100 dark:bg-slate-700 rounded-xl flex items-center justify-center border border-neutral-300 dark:border-slate-600 shadow-lg">
+                                    <RiFileExcel2Fill className="text-3xl text-black dark:text-green-500" />
                                 </div>
-                                <span className="text-xs font-mono text-slate-400">Raw Data</span>
+                                <span className="text-xs font-mono text-neutral-500 dark:text-slate-400">Raw Data</span>
                                 {/* Partikel Data Kotor (Animasi) */}
                                 {isProcessing && (
                                     <motion.div
@@ -79,10 +79,10 @@ const ETLProcess = () => {
                             </div>
 
                             {/* ARROW 1 */}
-                            <div className="flex-1 h-1 bg-slate-700 mx-4 relative overflow-hidden rounded-full">
+                            <div className="flex-1 h-1 bg-neutral-200 dark:bg-slate-700 mx-4 relative overflow-hidden rounded-full">
                                 {isProcessing && (
                                     <motion.div
-                                        className="w-full h-full bg-teal-500"
+                                        className="w-full h-full bg-black dark:bg-teal-500"
                                         initial={{ x: "-100%" }}
                                         animate={{ x: "100%" }}
                                         transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
@@ -92,26 +92,26 @@ const ETLProcess = () => {
 
                             {/* NODE 2: PROCESSING ENGINE */}
                             <div className="flex flex-col items-center gap-2 z-10">
-                                <div className={`w-20 h-20 rounded-full flex items-center justify-center border-2 shadow-[0_0_30px_rgba(0,0,0,0.2)] transition-colors duration-500 ${isProcessing ? 'border-teal-400 bg-teal-500/10' : 'border-slate-600 bg-slate-800'}`}>
+                                <div className={`w-20 h-20 rounded-full flex items-center justify-center border-2 shadow-[0_0_30px_rgba(0,0,0,0.1)] dark:shadow-[0_0_30px_rgba(0,0,0,0.2)] transition-colors duration-500 ${isProcessing ? 'border-black dark:border-teal-400 bg-neutral-100 dark:bg-teal-500/10' : 'border-neutral-300 dark:border-slate-600 bg-neutral-100 dark:bg-slate-800'}`}>
                                     {isProcessing ? (
                                         <motion.div animate={{ rotate: 360 }} transition={{ duration: 2, repeat: Infinity, ease: "linear" }}>
-                                            <FiSettings className="text-3xl text-teal-400" />
+                                            <FiSettings className="text-3xl text-black dark:text-teal-400" />
                                         </motion.div>
                                     ) : (
                                         <div className="flex gap-2">
-                                            <SiPython className="text-2xl text-yellow-400" />
-                                            <SiMysql className="text-2xl text-blue-400" />
+                                            <SiPython className="text-2xl text-black dark:text-yellow-400" />
+                                            <SiMysql className="text-2xl text-black dark:text-blue-400" />
                                         </div>
                                     )}
                                 </div>
-                                <span className="text-xs font-mono text-slate-400">Cleaning & Transform</span>
+                                <span className="text-xs font-mono text-neutral-500 dark:text-slate-400">Cleaning & Transform</span>
                             </div>
 
                             {/* ARROW 2 */}
-                            <div className="flex-1 h-1 bg-slate-700 mx-4 relative overflow-hidden rounded-full">
+                            <div className="flex-1 h-1 bg-neutral-200 dark:bg-slate-700 mx-4 relative overflow-hidden rounded-full">
                                 {isProcessing && (
                                     <motion.div
-                                        className="w-full h-full bg-blue-500"
+                                        className="w-full h-full bg-black dark:bg-blue-500"
                                         initial={{ x: "-100%" }}
                                         animate={{ x: "100%" }}
                                         transition={{ duration: 1.5, delay: 0.5, repeat: Infinity, ease: "linear" }}
@@ -121,10 +121,10 @@ const ETLProcess = () => {
 
                             {/* NODE 3: DASHBOARD */}
                             <div className="flex flex-col items-center gap-2 z-10">
-                                <div className={`w-16 h-16 rounded-xl flex items-center justify-center border shadow-lg transition-all duration-500 ${isProcessing ? 'bg-blue-500/20 border-blue-500 scale-110' : 'bg-slate-700 border-slate-600'}`}>
-                                    <RiBarChartBoxFill className={`text-3xl ${isProcessing ? 'text-blue-400' : 'text-slate-400'}`} />
+                                <div className={`w-16 h-16 rounded-xl flex items-center justify-center border shadow-lg transition-all duration-500 ${isProcessing ? 'bg-neutral-100 dark:bg-blue-500/20 border-black dark:border-blue-500 scale-110' : 'bg-neutral-100 dark:bg-slate-700 border-neutral-300 dark:border-slate-600'}`}>
+                                    <RiBarChartBoxFill className={`text-3xl ${isProcessing ? 'text-black dark:text-blue-400' : 'text-neutral-400 dark:text-slate-400'}`} />
                                 </div>
-                                <span className="text-xs font-mono text-slate-400">Insights</span>
+                                <span className="text-xs font-mono text-neutral-500 dark:text-slate-400">Insights</span>
                                 {/* Centang Sukses */}
                                 {isProcessing && (
                                     <motion.div
@@ -137,14 +137,13 @@ const ETLProcess = () => {
                             </div>
                         </div>
 
-                        {/* Tombol Play */}
                         <div className="mt-12 flex justify-center">
                             <button
                                 onClick={runPipeline}
                                 disabled={isProcessing}
                                 className={`flex items-center gap-2 px-8 py-3 rounded-full font-bold transition-all ${isProcessing
-                                    ? 'bg-slate-700 text-slate-500 cursor-not-allowed'
-                                    : 'bg-teal-500 hover:bg-teal-400 text-slate-900 shadow-[0_0_20px_rgba(20,184,166,0.4)]'
+                                    ? 'bg-neutral-200 dark:bg-slate-700 text-neutral-400 dark:text-slate-500 cursor-not-allowed'
+                                    : 'bg-black hover:bg-neutral-800 text-white dark:bg-teal-500 dark:hover:bg-teal-400 dark:text-slate-900 shadow-xl dark:shadow-[0_0_20px_rgba(20,184,166,0.4)]'
                                     }`}
                             >
                                 {isProcessing ? 'Processing Data...' : <><FiPlay /> Run ETL Pipeline</>}
@@ -153,7 +152,7 @@ const ETLProcess = () => {
                     </div>
 
                     {/* 2. TERMINAL LOGS (Kanan) */}
-                    <div className="bg-[#0f172a] border border-slate-700 rounded-xl p-6 font-mono text-xs h-[400px] overflow-hidden flex flex-col shadow-2xl">
+                    <div className="bg-slate-950 border border-slate-800 rounded-xl p-6 font-mono text-xs h-[400px] overflow-hidden flex flex-col shadow-2xl">
                         <div className="flex items-center gap-2 mb-4 border-b border-slate-800 pb-2">
                             <div className="w-3 h-3 rounded-full bg-red-500"></div>
                             <div className="w-3 h-3 rounded-full bg-yellow-500"></div>

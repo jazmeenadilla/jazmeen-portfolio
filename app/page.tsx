@@ -12,7 +12,7 @@ import Recommendation from "@/components/Recommendation";
 
 export default function Home() {
   return (
-    <main className="bg-slate-900 min-h-screen text-white overflow-x-hidden scroll-smooth">
+    <main className="bg-white dark:bg-slate-900 min-h-screen text-black dark:text-white overflow-x-hidden scroll-smooth transition-colors duration-300">
       <section id="about">
         <HeroData />
       </section>

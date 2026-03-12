@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 
 const Recommendation = () => {
     return (
-        <section id="recommendation" className="py-24 bg-slate-950 text-slate-300 relative overflow-hidden">
+        <section id="recommendation" className="py-24 bg-neutral-50 dark:bg-slate-950 text-black dark:text-slate-300 relative overflow-hidden transition-colors duration-300">
             {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-teal-900/10 rounded-full blur-[120px] pointer-events-none"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-neutral-200/50 dark:bg-teal-900/10 rounded-full blur-[120px] pointer-events-none"></div>
 
             <div className="max-w-4xl mx-auto px-6 relative z-10">
                 <motion.div
@@ -17,10 +17,10 @@ const Recommendation = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
-                        Words of <span className="text-transparent bg-clip-text bg-linear-to-r from-teal-400 to-emerald-400">Recommendation</span>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-black dark:text-white">
+                        Words of <span className="text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-teal-400 dark:to-emerald-400">Recommendation</span>
                     </h2>
-                    <div className="w-20 h-1 bg-teal-500 mx-auto rounded-full opacity-50"></div>
+                    <div className="w-20 h-1 bg-black dark:bg-teal-500 mx-auto rounded-full opacity-50"></div>
                 </motion.div>
 
                 <motion.div
@@ -28,14 +28,14 @@ const Recommendation = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.7 }}
                     viewport={{ once: true }}
-                    className="relative bg-slate-900/50 border border-slate-800/80 rounded-3xl p-8 md:p-12 backdrop-blur-sm shadow-xl"
+                    className="relative bg-white dark:bg-slate-900/50 border border-neutral-200 dark:border-slate-800/80 rounded-3xl p-8 md:p-12 backdrop-blur-sm shadow-xl"
                 >
                     {/* Quotation Marks Decoration */}
-                    <div className="absolute -top-6 -left-4 md:-left-8 text-6xl md:text-8xl text-teal-500/10 font-serif leading-none select-none">
+                    <div className="absolute -top-6 -left-4 md:-left-8 text-6xl md:text-8xl text-black/5 dark:text-teal-500/10 font-serif leading-none select-none">
                         "
                     </div>
 
-                    <div className="space-y-6 text-slate-400 text-base md:text-lg leading-relaxed text-justify relative z-10">
+                    <div className="space-y-6 text-neutral-600 dark:text-slate-400 text-base md:text-lg leading-relaxed text-justify relative z-10">
                         <p>
                             I'm pleased to recommend Jazmeen as a capable and insightful Data Analyst. While she may come across as reserved at first, once you start exchanging ideas with her, you quickly see how thoughtful and engaging she is. Especially on mathematics.
                         </p>
@@ -50,10 +50,10 @@ const Recommendation = () => {
                         </p>
                     </div>
 
-                    <div className="mt-10 pt-6 border-t border-slate-800/50 flex items-center justify-between">
+                    <div className="mt-10 pt-6 border-t border-neutral-200 dark:border-slate-800/50 flex items-center justify-between">
                         <div>
-                            <h4 className="text-white font-bold text-lg md:text-xl">Amie Febri Yoesa</h4>
-                            <p className="text-teal-400 text-sm md:text-base font-medium">Team Leader at RevoU Faculty</p>
+                            <h4 className="text-black dark:text-white font-bold text-lg md:text-xl">Amie Febri Yoesa</h4>
+                            <p className="text-neutral-500 dark:text-teal-400 text-sm md:text-base font-medium">Team Leader at RevoU Faculty</p>
                         </div>
                     </div>
                 </motion.div>
