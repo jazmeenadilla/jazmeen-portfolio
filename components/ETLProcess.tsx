@@ -18,7 +18,7 @@ const ETLProcess = () => {
     const runPipeline = () => {
         if (isProcessing) return;
         setIsProcessing(true);
-        setLogs(["> Initializing ETL Pipeline..."]);
+        setLogs(["> Initializing Analysis Framework..."]);
 
         const steps = [
             { msg: "> [EXTRACT] pd.read_csv('raw_sales_data.csv')", delay: 800, color: "text-slate-400" },
@@ -48,9 +48,9 @@ const ETLProcess = () => {
 
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-white">The <span className="text-black dark:text-teal-400">Process</span></h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-white">Data Analytics <span className="text-black dark:text-teal-400">Framework</span></h2>
                     <p className="text-neutral-600 dark:text-slate-400 max-w-2xl mx-auto">
-                        From messy raw data to clear insights. This is the pipeline I built to ensure data quality.
+                        From messy raw data to clear, actionable insights. This is the structured process I use to extract value from data and drive strategic decisions.
                     </p>
                 </div>
 
@@ -146,7 +146,7 @@ const ETLProcess = () => {
                                     : 'bg-black hover:bg-neutral-800 text-white dark:bg-teal-500 dark:hover:bg-teal-400 dark:text-slate-900 shadow-xl dark:shadow-[0_0_20px_rgba(20,184,166,0.4)]'
                                     }`}
                             >
-                                {isProcessing ? 'Processing Data...' : <><FiPlay /> Run ETL Pipeline</>}
+                                {isProcessing ? 'Processing Data...' : <><FiPlay /> Run Analysis Process</>}
                             </button>
                         </div>
                     </div>

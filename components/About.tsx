@@ -93,7 +93,7 @@ const About = () => {
                                     <FiAward className="text-2xl" />
                                 </div>
                                 <div>
-                                    <h3 className="text-black dark:text-slate-200 font-semibold text-lg">RevoU FS Data Analyst</h3>
+                                    <h3 className="text-black dark:text-slate-200 font-semibold text-lg">RevoU Full Stack Data Analytics</h3>
                                     <p className="text-neutral-600 dark:text-slate-500 text-sm mt-1.5 leading-relaxed">Intensive bootcamp covering full-stack data preparation, analysis & visualization.</p>
                                 </div>
                             </div>

@@ -22,8 +22,8 @@ const projects = [
     coverIcon: <FiPieChart />,
     desc: "Analyze QSR restaurant sales data to identify revenue growth opportunities and operational efficiencies.",
 
-    insight: "Revenue +15%",
-    insightDesc: "Potential revenue increase through menu & shift optimization.",
+    insight: "15% Revenue Growth",
+    insightDesc: "Identified optimization strategies to boost potential revenue.",
 
     fullDetail: {
       duration: "Dec 2025 - Feb 2026",
@@ -57,8 +57,8 @@ const projects = [
     coverIcon: <FiShoppingCart />,
     desc: "Analyze sales performance by product category using SQL (BigQuery) for customer basket value optimization.",
 
-    insight: "34.4% Revenue",
-    insightDesc: "Top 3 Categories generate customer retention >99%.",
+    insight: "Top 34% Drivers",
+    insightDesc: "Discovered top 3 categories driving strong customer retention.",
 
     fullDetail: {
       duration: "Oct 2025 - Nov 2025",
@@ -90,8 +90,8 @@ const projects = [
     coverIcon: <FiActivity />,
     desc: "Hypothesis Testing (A/B Testing) UI/UX design and evaluation of discount campaign efficiency in e-commerce.",
 
-    insight: "ROI 59x",
-    insightDesc: "12/12 campaign most efficient, new design increases ATV.",
+    insight: "59x Promo ROI",
+    insightDesc: "Proved 12/12 promo efficiency & validated new UI design success.",
 
     fullDetail: {
       duration: "Oct 2025",

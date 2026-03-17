@@ -149,8 +149,8 @@ const HeroData = () => {
                             <FiDatabase size={20} />
                         </div>
                         <div>
-                            <div className="text-[10px] uppercase tracking-wider text-neutral-500 dark:text-slate-400">Rows Processed</div>
-                            <div className="text-lg font-bold text-black dark:text-white font-mono">1,420,099</div>
+                            <div className="text-[10px] uppercase tracking-wider text-neutral-500 dark:text-slate-400">Focus On</div>
+                            <div className="text-lg font-bold text-black dark:text-white font-sans">Actionable Insights</div>
                         </div>
                     </motion.div>
 

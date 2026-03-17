@@ -38,7 +38,7 @@ const Education = () => {
                 {/* Header Section */}
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black dark:text-white">
-                        Education & <span className="text-black dark:text-teal-400">Experience</span>
+                        Background <span className="text-black dark:text-teal-400">Education</span>
                     </h2>
                     <p className="text-neutral-600 dark:text-slate-400">
                         A combination of a strong academic background in Mathematics with practical technical skills.

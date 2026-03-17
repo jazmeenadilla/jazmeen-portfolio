@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FiLinkedin } from 'react-icons/fi';
 
 const Recommendation = () => {
     return (
@@ -52,8 +53,11 @@ const Recommendation = () => {
 
                     <div className="mt-10 pt-6 border-t border-neutral-200 dark:border-slate-800/50 flex items-center justify-between">
                         <div>
-                            <h4 className="text-black dark:text-white font-bold text-lg md:text-xl">Amie Febri Yoesa</h4>
-                            <p className="text-neutral-500 dark:text-teal-400 text-sm md:text-base font-medium">Team Leader at RevoU Faculty</p>
+                            <a href="https://www.linkedin.com/recs/received/?senderId=amieyoesa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 group">
+                                <h4 className="text-black dark:text-white font-bold text-lg md:text-xl group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Amie Febri Yoesa</h4>
+                                <FiLinkedin className="text-neutral-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors" />
+                            </a>
+                            <p className="text-neutral-500 dark:text-teal-400 text-sm md:text-base font-medium mt-1">Team Leader at RevoU Faculty</p>
                         </div>
                     </div>
                 </motion.div>
