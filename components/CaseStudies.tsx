@@ -14,7 +14,11 @@ import { RiFileExcel2Fill, RiBarChartBoxFill } from 'react-icons/ri';
 import { projectsData } from '../data/projectsData';
 import Link from 'next/link';
 
-const recentProjects = projectsData.filter(p => [1, 4, 5].includes(p.id));
+const recentProjects = [
+  projectsData.find(p => p.id === 1),
+  projectsData.find(p => p.id === 8),
+  projectsData.find(p => p.id === 4)
+].filter(Boolean) as typeof projectsData;
 
 const CaseStudies = () => {
   const [hoveredId, setHoveredId] = useState<number | null>(null);
@@ -44,39 +48,72 @@ const CaseStudies = () => {
               key={project.id}
               layoutId={`card-${project.id}`}
               onClick={() => setSelectedProject(project)}
-              className="group relative rounded-2xl overflow-hidden bg-white dark:bg-slate-900 border border-neutral-200 dark:border-slate-800 h-[450px] cursor-pointer shadow-md dark:shadow-lg hover:shadow-xl dark:hover:shadow-teal-500/10 transition-shadow"
+              className={`group relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 ${
+                project.isSpecial
+                  ? 'border-teal-500/70 dark:border-teal-400/80 h-[450px] lg:h-[490px] lg:-translate-y-5 shadow-2xl shadow-teal-500/10 dark:shadow-teal-500/20 ring-2 ring-teal-500/10 hover:shadow-teal-500/20'
+                  : 'border-neutral-200 dark:border-slate-800 h-[450px] bg-white dark:bg-slate-900 shadow-md dark:shadow-lg hover:shadow-xl dark:hover:shadow-teal-500/10'
+              }`}
               onMouseEnter={() => setHoveredId(project.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
 
               {/* Cover Ikon (Pengganti Gambar) */}
-              <div className="absolute inset-0 w-full h-full bg-gradient-to-br from-neutral-100 dark:from-slate-800 to-neutral-200 dark:to-slate-900 flex items-center justify-center overflow-hidden">
+              <div className={`absolute inset-0 w-full h-full flex items-center justify-center overflow-hidden transition-all duration-500 ${
+                project.isSpecial
+                  ? 'bg-gradient-to-br from-slate-950 via-teal-950/70 to-indigo-950/80 dark:from-slate-950 dark:via-teal-950/50 dark:to-slate-900'
+                  : 'bg-gradient-to-br from-neutral-100 dark:from-slate-800 to-neutral-200 dark:to-slate-900'
+              }`}>
                 <motion.div
-                  className="text-slate-300 dark:text-slate-700/30 group-hover:text-teal-500/20 transition-colors duration-500 transform group-hover:scale-110 text-[180px]"
+                  className={`transition-colors duration-500 transform group-hover:scale-110 text-[180px] ${
+                    project.isSpecial
+                      ? 'text-teal-500/10 group-hover:text-teal-400/25'
+                      : 'text-slate-300 dark:text-slate-700/30 group-hover:text-teal-500/20'
+                  }`}
                 >
                   {project.coverIcon}
                 </motion.div>
               </div>
 
               {/* Overlay Gradient */}
-              <div className="absolute inset-0 bg-gradient-to-t from-white via-white/80 dark:from-slate-950 dark:via-slate-950/80 to-transparent opacity-90"></div>
+              <div className={`absolute inset-0 transition-all duration-500 opacity-95 ${
+                project.isSpecial
+                  ? 'bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent'
+                  : 'bg-gradient-to-t from-white via-white/80 dark:from-slate-950 dark:via-slate-950/80 to-transparent'
+              }`}></div>
 
               {/* Content Card */}
               <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
-                <div className="absolute top-6 left-6">
-                  <span className="px-3 py-1 text-xs font-mono font-bold text-black dark:text-teal-400 bg-neutral-100 dark:bg-teal-500/10 border border-neutral-200 dark:border-teal-500/20 rounded-full backdrop-blur-sm">
+                <div className="absolute top-6 left-6 right-6 flex flex-wrap gap-2 items-center">
+                  <span className={`px-3 py-1 text-xs font-mono font-bold border rounded-full backdrop-blur-sm ${
+                    project.isSpecial
+                      ? 'text-teal-400 bg-teal-900/30 border-teal-500/30'
+                      : 'text-black dark:text-teal-400 bg-neutral-100 dark:bg-teal-500/10 border-neutral-200 dark:border-teal-500/20'
+                  }`}>
                     {project.category}
                   </span>
+                  {project.isSpecial && (
+                    <span className="px-3 py-1 text-[10px] md:text-xs font-mono font-bold text-white bg-gradient-to-r from-rose-500 via-red-500 to-orange-500 rounded-full shadow-[0_0_15px_rgba(239,68,68,0.3)] tracking-wider uppercase border border-white/10">
+                      Virtual Internship Project
+                    </span>
+                  )}
                 </div>
 
                 <div className={`transition-all duration-300 ${hoveredId === project.id ? 'translate-y-4 opacity-0' : 'translate-y-0 opacity-100'}`}>
-                  <h3 className="text-2xl font-bold mb-2 text-black dark:text-white group-hover:text-black dark:group-hover:text-teal-400 transition-colors drop-shadow-sm dark:drop-shadow-md">
+                  <h3 className={`text-2xl font-bold mb-2 transition-colors drop-shadow-sm dark:drop-shadow-md ${
+                    project.isSpecial
+                      ? 'text-white group-hover:text-teal-300'
+                      : 'text-black dark:text-white group-hover:text-black dark:group-hover:text-teal-400'
+                  }`}>
                     {project.title}
                   </h3>
-                  <p className="text-neutral-600 dark:text-slate-300 text-sm line-clamp-2 mb-4 drop-shadow-sm">
+                  <p className={`text-sm line-clamp-2 mb-4 drop-shadow-sm ${
+                    project.isSpecial ? 'text-slate-300' : 'text-neutral-600 dark:text-slate-300'
+                  }`}>
                     {project.desc}
                   </p>
-                  <div className="flex gap-3 text-lg text-black dark:text-teal-400">
+                  <div className={`flex gap-3 text-lg ${
+                    project.isSpecial ? 'text-teal-400' : 'text-black dark:text-teal-400'
+                  }`}>
                     {project.tools}
                   </div>
                 </div>
@@ -242,7 +279,14 @@ const CaseStudies = () => {
                 {selectedProject.fullDetail?.links.colab && selectedProject.fullDetail?.links.colab !== "#" && (
                   <a href={selectedProject.fullDetail?.links.colab} target="_blank" rel="noreferrer"
                     className="px-4 py-2 border border-black/10 dark:border-slate-600 bg-white dark:bg-transparent text-black dark:text-slate-300 rounded hover:border-black hover:bg-black hover:text-white dark:hover:border-yellow-500 dark:hover:text-yellow-400 transition-all flex items-center gap-2 text-sm font-medium">
-                    <SiPython /> Python (Colab)
+                    <SiPython /> {selectedProject.fullDetail?.links.colab2 && selectedProject.fullDetail?.links.colab2 !== "#" ? "Python (Cleaning)" : "Python (Colab)"}
+                  </a>
+                )}
+
+                {selectedProject.fullDetail?.links.colab2 && selectedProject.fullDetail?.links.colab2 !== "#" && (
+                  <a href={selectedProject.fullDetail?.links.colab2} target="_blank" rel="noreferrer"
+                    className="px-4 py-2 border border-black/10 dark:border-slate-600 bg-white dark:bg-transparent text-black dark:text-slate-300 rounded hover:border-black hover:bg-black hover:text-white dark:hover:border-yellow-500 dark:hover:text-yellow-400 transition-all flex items-center gap-2 text-sm font-medium">
+                    <SiPython /> Python (EDA)
                   </a>
                 )}
 
