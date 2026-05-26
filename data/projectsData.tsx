@@ -12,6 +12,7 @@ export const projectsData = [
     tools: [<IoLogoTableau key="tab" />, <SiPython key="py" />],
     coverIcon: <FiPieChart />,
     isSpecial: false,
+    partnership: "",
     desc: "Analyze QSR restaurant sales data to identify revenue growth opportunities and operational efficiencies.",
     insight: "15% Revenue Growth",
     insightDesc: "Identified optimization strategies to boost potential revenue.",
@@ -221,11 +222,12 @@ export const projectsData = [
     tools: [<IoLogoTableau key="tab" />, <SiPython key="py" />],
     coverIcon: <FiActivity />,
     isSpecial: true,
+    partnership: "RevoU x Telkom Indonesia",
     desc: "An end-to-end campaign analytics pipeline for OCA Blast (Telkom Indonesia), resolving data integration issues and providing unified omnichannel reporting.",
     insight: "+20% Cost Efficiency",
     insightDesc: "Harmonized campaign datasets across SMS, WhatsApp, and Email to optimize communication ROI.",
     fullDetail: {
-      duration: "Feb 2026 - Mar 2026",
+      duration: "May 2026",
       background: "OCA Blast is Telkom Indonesia's premier omnichannel communication platform, allowing businesses to execute mass messaging campaigns. Previously, campaign performance data from SMS, Email, and WhatsApp was siloed across separate systems with differing formats, schemas, and metrics. This made cross-channel performance evaluation, cost optimization, and strategic ROI analysis extremely challenging for management.",
       objective: [
         "Create a single source of truth by integrating disparate campaign logs from SMS, Email, and WhatsApp channels.",

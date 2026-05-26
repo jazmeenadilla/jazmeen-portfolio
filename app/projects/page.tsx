@@ -156,6 +156,12 @@ export default function AllProjects() {
                     <span className="flex items-center gap-2">{selectedProject.tools}</span>
                     <span className="hidden md:inline">•</span>
                     <span className="bg-neutral-100 dark:bg-teal-500/10 px-2 py-1 rounded border border-neutral-200 dark:border-teal-500/20">{selectedProject.category}</span>
+                    {selectedProject.partnership && (
+                      <>
+                        <span className="hidden md:inline">•</span>
+                        <span className="bg-neutral-100 dark:bg-teal-500/10 px-2 py-1 rounded border border-neutral-200 dark:border-teal-500/20 text-[#534AB7] dark:text-[#7F77DD] font-semibold">{selectedProject.partnership}</span>
+                      </>
+                    )}
                     <span className="hidden md:inline">•</span>
                     <span className="text-neutral-600 dark:text-slate-400 bg-neutral-100 dark:bg-slate-800 px-2 py-1 rounded border border-neutral-300 dark:border-slate-700">{selectedProject.fullDetail?.duration}</span>
                   </div>
