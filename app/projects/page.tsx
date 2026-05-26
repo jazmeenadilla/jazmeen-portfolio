@@ -90,10 +90,19 @@ export default function AllProjects() {
 
                 {/* Content Card */}
                 <div className="absolute inset-0 p-8 flex flex-col justify-end z-10">
-                  <div className="absolute top-6 left-6">
-                    <span className="px-3 py-1 text-xs font-mono font-bold text-black dark:text-teal-400 bg-neutral-100 dark:bg-teal-500/10 border border-neutral-200 dark:border-teal-500/20 rounded-full backdrop-blur-sm">
+                  <div className="absolute top-6 left-6 right-6 flex flex-wrap gap-2 items-center">
+                    <span className={`px-3 py-1 text-xs font-mono font-bold border rounded-full backdrop-blur-sm ${
+                      project.isSpecial
+                        ? 'text-teal-400 bg-teal-900/30 border-teal-500/30'
+                        : 'text-black dark:text-teal-400 bg-neutral-100 dark:bg-teal-500/10 border-neutral-200 dark:border-teal-500/20'
+                    }`}>
                       {project.category}
                     </span>
+                    {project.isSpecial && (
+                      <span className="px-3 py-1 text-[10px] md:text-xs font-mono font-bold text-white bg-gradient-to-r from-rose-500 via-red-500 to-orange-500 rounded-full shadow-[0_0_15px_rgba(239,68,68,0.3)] tracking-wider uppercase border border-white/10">
+                        Virtual Internship Project
+                      </span>
+                    )}
                   </div>
 
                   <div className={`transition-all duration-300 ${hoveredId === project.id ? 'translate-y-4 opacity-0' : 'translate-y-0 opacity-100'}`}>
@@ -244,7 +253,13 @@ export default function AllProjects() {
                 {selectedProject.fullDetail?.links.colab && selectedProject.fullDetail?.links.colab !== "#" && (
                   <a href={selectedProject.fullDetail?.links.colab} target="_blank" rel="noreferrer"
                     className="px-4 py-2 border border-black/10 dark:border-slate-600 bg-white dark:bg-transparent text-black dark:text-slate-300 rounded hover:border-black hover:bg-black hover:text-white dark:hover:border-yellow-500 dark:hover:text-yellow-400 transition-all flex items-center gap-2 text-sm font-medium">
-                    <SiPython /> Python (Colab)
+                    <SiPython /> {selectedProject.fullDetail?.links.colab2 && selectedProject.fullDetail?.links.colab2 !== "#" ? "Python (Cleaning)" : "Python (Colab)"}
+                  </a>
+                )}
+                {selectedProject.fullDetail?.links.colab2 && selectedProject.fullDetail?.links.colab2 !== "#" && (
+                  <a href={selectedProject.fullDetail?.links.colab2} target="_blank" rel="noreferrer"
+                    className="px-4 py-2 border border-black/10 dark:border-slate-600 bg-white dark:bg-transparent text-black dark:text-slate-300 rounded hover:border-black hover:bg-black hover:text-white dark:hover:border-yellow-500 dark:hover:text-yellow-400 transition-all flex items-center gap-2 text-sm font-medium">
+                    <SiPython /> Python (EDA)
                   </a>
                 )}
               </div>

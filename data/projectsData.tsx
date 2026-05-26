@@ -11,6 +11,7 @@ export const projectsData = [
     category: "F&B Performance Optimization",
     tools: [<IoLogoTableau key="tab" />, <SiPython key="py" />],
     coverIcon: <FiPieChart />,
+    isSpecial: false,
     desc: "Analyze QSR restaurant sales data to identify revenue growth opportunities and operational efficiencies.",
     insight: "15% Revenue Growth",
     insightDesc: "Identified optimization strategies to boost potential revenue.",
@@ -29,6 +30,7 @@ export const projectsData = [
         deck: "https://docs.google.com/presentation/d/1KD0A5GVD25kfkn5Zlqq-fpR7W_U9JMG8xUtpJTILye0/edit?usp=sharing",
         query: "#",
         colab: "https://colab.research.google.com/drive/15ppBVU-x68MLzY2lahQUhvfP9i8HXOU_?usp=sharing",
+        colab2: "#",
         tableau: "https://public.tableau.com/views/DEEPPJAZMEENADILLA-BalajiFastFoodSalesDashboard1/Dashboard1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
         kaggle: "#",
         sheet1: "#",
@@ -208,6 +210,39 @@ export const projectsData = [
         tableau: "https://public.tableau.com/app/profile/jazmeen.adilla/viz/DATAVIZ_OCT25JazmeenAdillaIntermedieteAssignmentM1M21/Dashboard1#1",
         kaggle: "#",
         sheet1: "https://docs.google.com/spreadsheets/d/1JhhUwaZKm2n_ThOHzs68Hzapss3BtYpR/edit?usp=sharing&ouid=107400974752652697021&rtpof=true&sd=true",
+        sheet2: "#"
+      }
+    }
+  },
+  {
+    id: 8,
+    title: "Unified Channel Performance Reporting",
+    category: "Omnichannel Analytics",
+    tools: [<IoLogoTableau key="tab" />, <SiPython key="py" />],
+    coverIcon: <FiActivity />,
+    isSpecial: true,
+    desc: "An end-to-end campaign analytics pipeline for OCA Blast (Telkom Indonesia), resolving data integration issues and providing unified omnichannel reporting.",
+    insight: "+20% Cost Efficiency",
+    insightDesc: "Harmonized campaign datasets across SMS, WhatsApp, and Email to optimize communication ROI.",
+    fullDetail: {
+      duration: "Feb 2026 - Mar 2026",
+      background: "OCA Blast is Telkom Indonesia's premier omnichannel communication platform, allowing businesses to execute mass messaging campaigns. Previously, campaign performance data from SMS, Email, and WhatsApp was siloed across separate systems with differing formats, schemas, and metrics. This made cross-channel performance evaluation, cost optimization, and strategic ROI analysis extremely challenging for management.",
+      objective: [
+        "Create a single source of truth by integrating disparate campaign logs from SMS, Email, and WhatsApp channels.",
+        "Perform extensive data cleaning and schema harmonization on raw campaign records to eliminate formatting issues and missing attributes.",
+        "Establish an interactive, unified Tableau dashboard presenting key omnichannel performance indicators (delivery rate, read rate, CTR).",
+        "Formulate data-driven cost-efficiency strategies to optimize communications spending while maintaining or improving user engagement."
+      ],
+      methods: "Designed a comprehensive analytics pipeline starting with rigorous data cleaning, profiling, and schema synchronization in Python (Google Colab). Normalized multi-channel schemas and calculated custom unified KPIs (Average Cost per Message, Conversion Efficiency Index). Built an interactive multi-view Tableau dashboard using custom color palettes, integrated filters, and performance metrics matrix.",
+      results: "Successfully consolidated raw transaction logs from SMS, Email, and WhatsApp. Analysis revealed that while WhatsApp has the highest engagement (85% read rate), it also carries the highest unit cost. Email proved to be highly cost-effective for rich media, while SMS remained critical for transactional alerts. By identifying high-cost/low-yield segments and peak delivery times, the project provided a cost-rebalancing strategy expected to drive up to a 20% cost efficiency gain.",
+      links: {
+        deck: "https://docs.google.com/presentation/d/1WJz6MudjtyFxoUb_jxW3FTJBKULiAscvA6-y03ZelJc/edit?usp=sharing",
+        query: "#",
+        colab: "https://colab.research.google.com/drive/17Ef5xg7ANf4HbTksPd95D36-wjAYyK_x?usp=sharing",
+        colab2: "https://colab.research.google.com/drive/14NBL4H_ZcNUEJlEryIOnMY2ui4lKoDqL?usp=sharing",
+        tableau: "https://public.tableau.com/app/profile/jazmeen.adilla/viz/JazmeenAdilla_OCA_BlastDASHBOARD/Dashboard1?publish=yes",
+        kaggle: "#",
+        sheet1: "#",
         sheet2: "#"
       }
     }

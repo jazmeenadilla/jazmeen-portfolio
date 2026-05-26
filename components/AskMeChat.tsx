@@ -31,6 +31,7 @@ PROJECTS:
 5. App Funnel E-CommerceU — improved conversion rates by analyzing funnel drop-offs
 6. RevoBank Customer Segmentation — analyzed user datasets to define actionable customer segments
 7. RevoFinance Expense and Budget — Interactive Tableau dashboard to streamline financial tracking
+8. Unified Channel Performance Reporting (OCA Blast) — Omnichannel, integrated SMS, Email, WhatsApp logs to optimize ROI by +20% cost efficiency (special collaboration with Telkom Indonesia & RevoU)
 
 PERSONALITY: Honest, disciplined, analytical, driven by data and logic. Calm but highly engaged in intellectual discussions.
 
