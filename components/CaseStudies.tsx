@@ -15,9 +15,9 @@ import { projectsData } from '../data/projectsData';
 import Link from 'next/link';
 
 const recentProjects = [
-  projectsData.find(p => p.id === 1),
   projectsData.find(p => p.id === 8),
-  projectsData.find(p => p.id === 4)
+  projectsData.find(p => p.id === 1),
+  projectsData.find(p => p.id === 9)
 ].filter(Boolean) as typeof projectsData;
 
 const CaseStudies = () => {
@@ -96,6 +96,11 @@ const CaseStudies = () => {
                       Virtual Internship Project
                     </span>
                   )}
+                  {/* {project.id === 9 && (
+                    <span className="px-3 py-1 text-[10px] md:text-xs font-mono font-bold text-indigo-300 bg-indigo-900/40 border border-indigo-400/40 rounded-full tracking-wider uppercase backdrop-blur-sm">
+                      Part 2
+                    </span>
+                  )} */}
                 </div>
 
                 <div className={`transition-all duration-300 ${hoveredId === project.id ? 'translate-y-4 opacity-0' : 'translate-y-0 opacity-100'}`}>
@@ -138,8 +143,9 @@ const CaseStudies = () => {
 
         {/* View All Projects Button */}
         <div className="mt-12 flex justify-center">
-          <Link href="/projects" className="px-8 py-3 bg-neutral-900 dark:bg-teal-500 text-white rounded-full font-bold shadow-lg hover:shadow-xl hover:bg-black dark:hover:bg-teal-400 transition-all flex items-center gap-2">
-            View All Projects
+          <Link href="/projects" className="group px-8 py-3 bg-neutral-900 dark:bg-gradient-to-r dark:from-teal-600 dark:to-teal-500 text-white rounded-full font-bold shadow-lg hover:shadow-xl hover:bg-black dark:hover:shadow-teal-500/30 transition-all flex items-center gap-2">
+            View All Projects by Category
+            <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
       </div>
@@ -186,6 +192,14 @@ const CaseStudies = () => {
 
               {/* Scrollable Content */}
               <div className="p-6 md:p-8 overflow-y-auto custom-scrollbar space-y-8 bg-white dark:bg-slate-900">
+
+                {/* Disclaimer */}
+                <div className="flex gap-3 items-start p-4 rounded-xl border border-amber-300/50 dark:border-amber-500/30 bg-amber-50 dark:bg-amber-950/20">
+                  <span className="text-amber-500 dark:text-amber-400 text-lg flex-shrink-0 mt-0.5">⚠</span>
+                  <p className="text-amber-800 dark:text-amber-300 text-xs leading-relaxed">
+                    <span className="font-bold">Disclaimer:</span> The data provided is a representation of the original data which amount has been adjusted. The data used is NOT a representation of original data, adjusted for educational purposes and does not reflect the actual business condition of the company.
+                  </p>
+                </div>
 
                 {/* 1. Background & Objective */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

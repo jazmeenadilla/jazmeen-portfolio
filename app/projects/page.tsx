@@ -103,6 +103,11 @@ export default function AllProjects() {
                         Virtual Internship Project
                       </span>
                     )}
+                    {project.id === 9 && (
+                      <span className="px-3 py-1 text-[10px] md:text-xs font-mono font-bold text-indigo-300 bg-indigo-900/40 border border-indigo-400/40 rounded-full tracking-wider uppercase backdrop-blur-sm">
+                        Part 2
+                      </span>
+                    )}
                   </div>
 
                   <div className={`transition-all duration-300 ${hoveredId === project.id ? 'translate-y-4 opacity-0' : 'translate-y-0 opacity-100'}`}>
@@ -174,6 +179,15 @@ export default function AllProjects() {
 
               {/* Scrollable Content */}
               <div className="p-6 md:p-8 overflow-y-auto custom-scrollbar space-y-8 bg-white dark:bg-slate-900">
+
+                {/* Disclaimer */}
+                <div className="flex gap-3 items-start p-4 rounded-xl border border-amber-300/50 dark:border-amber-500/30 bg-amber-50 dark:bg-amber-950/20">
+                  <span className="text-amber-500 dark:text-amber-400 text-lg flex-shrink-0 mt-0.5">⚠</span>
+                  <p className="text-amber-800 dark:text-amber-300 text-xs leading-relaxed">
+                    <span className="font-bold">Disclaimer:</span> The data provided is a representation of the original data which amount has been adjusted. The data used is NOT a representation of original data, adjusted for educational purposes and does not reflect the actual business condition of the company.
+                  </p>
+                </div>
+
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div>
                     <h4 className="text-black dark:text-teal-400 font-bold mb-3 flex items-center gap-2 text-lg">

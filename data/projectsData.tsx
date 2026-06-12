@@ -248,5 +248,39 @@ export const projectsData = [
         sheet2: "#"
       }
     }
+  },
+  {
+    id: 9,
+    title: "Active User Behavior Analysis & Segmentation",
+    category: "User Behavior Analytics",
+    tools: [<SiPython key="py" />],
+    coverIcon: <FiActivity />,
+    isSpecial: true,
+    partnership: "RevoU x Telkom Indonesia",
+    desc: "Continuation of the OCA Blast project. A deep-dive behavioral analysis and segmentation of active users to sharpen targeting strategies and personalize campaign delivery.",
+    insight: "Behavior-Driven Segments",
+    insightDesc: "Identified distinct active user segments to enable precision targeting and higher campaign ROI.",
+    fullDetail: {
+      duration: "June 2026",
+      background: "As the second phase of the OCA Blast analytics initiative under the RevoU x Telkom Indonesia Virtual Internship, this project goes deeper into active user behavior. Building on the unified omnichannel dataset established in Project 1, the focus shifts to understanding how active users interact across SMS, WhatsApp, and Email identifying behavioral clusters and engagement patterns that can drive personalized, high-impact campaign strategies.",
+      objective: [
+        "Analyze active user interaction patterns across SMS, Email, and WhatsApp channels.",
+        "Perform user segmentation based on behavioral metrics (frequency, recency, channel preference, and engagement level).",
+        "Translate behavioral segments into actionable targeting recommendations for campaign managers.",
+        "Provide a pitch deck summarizing findings and strategic recommendations for OCA Blast stakeholders."
+      ],
+      methods: "Leveraged Python (Google Colab) for data wrangling, feature engineering, and clustering analysis on the harmonized omnichannel dataset. Applied segmentation techniques to group active users by behavioral attributes. Findings were synthesized into a structured pitch deck for business stakeholders.",
+      results: "Identified distinct user behavioral segments with differing channel affinities and engagement frequencies. Recommendations included personalized messaging schedules, channel-specific content strategies, and re-engagement triggers for at-risk active users all aimed at maximizing campaign efficiency and user lifetime value.",
+      links: {
+        deck: "https://docs.google.com/presentation/d/1Xjtac05GgQokuldWUKg092-_zgYu8Fm6aBRK7q5VuHA/edit?usp=sharing",
+        query: "#",
+        colab: "https://colab.research.google.com/drive/18iuaFbik4V_g8ytroTy8UbFni6XXUfDS?usp=sharing",
+        colab2: "#",
+        tableau: "#",
+        kaggle: "#",
+        sheet1: "#",
+        sheet2: "#"
+      }
+    }
   }
 ];
