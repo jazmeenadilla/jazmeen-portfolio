@@ -24,14 +24,17 @@ EDUCATION:
 SKILLS: Python (Pandas, NumPy), SQL, BigQuery, Tableau, Power BI, Excel, Statistics
 
 PROJECTS:
-1. Balaji Fast Food Sales Analysis — F&B, identified 15% revenue growth opportunity
-2. RevoGrocers Sales Performance Analysis — Retail, discovered top 34% revenue drivers
-3. TokoBli A/B Testing — E-commerce, proved 59x Promo ROI
-4. RevoFin Loan Portfolio Analysis — Financial, risk mitigation using BigQuery
-5. App Funnel E-CommerceU — improved conversion rates by analyzing funnel drop-offs
-6. RevoBank Customer Segmentation — analyzed user datasets to define actionable customer segments
-7. RevoFinance Expense and Budget — Interactive Tableau dashboard to streamline financial tracking
-8. Unified Channel Performance Reporting (OCA Blast) — Omnichannel, integrated SMS, Email, WhatsApp logs to optimize ROI by +20% cost efficiency (special collaboration with Telkom Indonesia & RevoU)
+1. Balaji Fast Food Sales Analysis — F&B, identified 15% revenue growth opportunity. Tools: Tableau, Python.
+2. RevoGrocers Sales Performance Analysis — Retail, discovered top 34% revenue drivers. Tools: BigQuery (SQL), Power BI.
+3. TokoBli A/B Testing & Campaign Evaluation — E-commerce, proved 59x Promo ROI and validated UI design change. Tools: Excel.
+4. RevoFin Loan Portfolio Analysis — Financial Analytics, risk mitigation and credit trend analysis. Tools: Tableau, BigQuery, Python.
+5. Analyzing & Evaluating App Funnel E-CommerceU Platform — App Funnel Analytics, improved conversion rates by analyzing funnel drop-offs. Tools: Tableau, Python.
+6. RevoBank Customer Segmentation — analyzed user and card datasets to define actionable customer segments. Tools: Python, Excel.
+7. RevoFinance Expense and Budget — Interactive Tableau dashboard for expense and budget tracking. Tools: Tableau, Excel.
+8. Unified Channel Performance Reporting (OCA Blast) — Part 1 of the RevoU x Telkom Indonesia Virtual Internship project. Omnichannel Analytics: integrated SMS, Email, WhatsApp campaign logs, built a unified Tableau dashboard, achieved up to +20% cost efficiency. Tools: Tableau, Python. Pitch deck: https://docs.google.com/presentation/d/1WJz6MudjtyFxoUb_jxW3FTJBKULiAscvA6-y03ZelJc/edit?usp=sharing
+9. Active User Behavior Analysis & Segmentation (OCA Blast) — Part 2 of the RevoU x Telkom Indonesia Virtual Internship project (continuation of Project 8). User Behavior Analytics: deep-dive behavioral segmentation of active users across SMS, WhatsApp, and Email to sharpen targeting strategies and personalize campaign delivery. June 2026. Tools: Python (Google Colab). Pitch deck: https://docs.google.com/presentation/d/1Xjtac05GgQokuldWUKg092-_zgYu8Fm6aBRK7q5VuHA/edit?usp=sharing | Google Colab: https://colab.research.google.com/drive/18iuaFbik4V_g8ytroTy8UbFni6XXUfDS?usp=sharing
+
+NOTE ON DATA: All projects use data that is a representation of the original data which has been adjusted in amount. The data is NOT a direct representation of original data and has been adjusted for educational purposes. It does not reflect the actual business condition of any company.
 
 PERSONALITY: Honest, disciplined, analytical, driven by data and logic. Calm but highly engaged in intellectual discussions.
 
